@@ -1,0 +1,147 @@
+:root {
+  --base-text-color: white;
+  --block-bg-color: #6A655D;
+}
+
+body {
+  color: var(--base-text-color);
+  font-family: "Roboto Mono",monospace;
+}
+
+p {
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+a {
+  color: var(--base-text-color);
+  text-decoration: none;
+}
+
+.content-block {
+  width: 100%;
+  height: 100%;
+}
+
+.big-text {
+  font-size: 20vh;
+}
+
+.medium-text {
+  font-size: 5vh;
+}
+
+.medium-text-second {
+  font-size: 5vh;
+}
+
+.arrow-text {
+  font-size: 3vh;
+}
+
+.scroll-text-down {
+  border-top: 1px solid;
+  width: min-content;
+  text-align: right;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+.scroll-text-up {
+  border-bottom: 1px solid;
+  width: max-content;
+  text-align: right;
+  position: sticky;
+  left: 90%;
+}
+
+.email {
+  margin-bottom: 2%;
+}
+
+.contacts {
+  margin-bottom: 2%;
+}
+
+.about {
+  margin-bottom: 15%;
+}
+
+.skills-title {
+  width: max-content;
+  text-align: right;
+  position: sticky;
+  left: 50%;
+}
+
+.skills {
+  width: 50%;
+  position: sticky;
+  left: 50%;
+  border-bottom: 1px solid;
+}
+
+.contacts-item {
+  border-bottom: 1px solid;
+  width: max-content;
+}
+
+.block-first, .block-third {
+  background-color: var(--block-bg-color);
+  opacity: 0.8;
+} 
+
+.content-first, .content-second, .content-third {
+  padding: 5%;
+  text-transform: uppercase;
+}
+
+.background-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-image: url("programmerBG.jpeg");
+}
+
+.content-wrap {
+  position: fixed; 
+  overflow-y: scroll;
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+}
+
+@media screen and (max-width: 769px) {
+  .big-text {
+    font-size: 13vh;
+  }
+  .medium-text-second {
+    font-size: 4vh;
+  }
+  .skills {
+    width: auto;
+    text-align: left;
+    position: sticky;
+    left: 0;
+  }
+  .skills-title {
+    width: auto;
+    text-align: left;
+    position: sticky;
+    left: 0;
+    margin-bottom: 3%;
+  }
+  .about-title {
+    margin-bottom: 3%;
+  }
+}
