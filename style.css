@@ -109,7 +109,7 @@ a {
   z-index: -1;
   background-size: cover;
   background-position: center;
-  background-image: url("programmerBG.jpeg");
+  background-image: url("bg.jpeg");
 }
 
 .content-wrap {
