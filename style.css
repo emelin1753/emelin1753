@@ -1,11 +1,11 @@
 :root {
   --base-text-color: white;
-  --block-bg-color: #6A655D;
+  --block-bg-color: #6a655d;
 }
 
 body {
   color: var(--base-text-color);
-  font-family: "Roboto Mono",monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 p {
@@ -90,12 +90,15 @@ a {
   width: max-content;
 }
 
-.block-first, .block-third {
+.block-first,
+.block-third {
   background-color: var(--block-bg-color);
   opacity: 0.8;
-} 
+}
 
-.content-first, .content-second, .content-third {
+.content-first,
+.content-second,
+.content-third {
   padding: 5%;
   text-transform: uppercase;
 }
@@ -113,11 +116,11 @@ a {
 }
 
 .content-wrap {
-  position: fixed; 
+  position: fixed;
   overflow-y: scroll;
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
 }
 
